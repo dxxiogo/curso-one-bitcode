@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<body>
+    <script>
+        let spaceship = "Elemental"
+        let velocity = "20"
+        console.log(spaceship.length == 9 && velocity > 15)
+        /* V e V = V && seginifica o operador lógico E (and)
+            V e F = F
+            F e V = F
+            F e F = F
+         */
+        console.log(velocity > 10 && velocity < 19)
+        console.log( spaceship >= "Elemental" || velocity < 10)
+        /* 
+        V ou V = V
+        V ou F = V
+        F ou V = V
+        F ou F = F
+        | | siginifica o OU (or)
+        */
+
+    </script>
+</body>
+</html>
