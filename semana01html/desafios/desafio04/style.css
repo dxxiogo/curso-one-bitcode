@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(imagens/background-galaxia.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+div{
+    background-color: bisque;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
