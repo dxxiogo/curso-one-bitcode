@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstValue = prompt("Digite o primeiro valor: ")
+        let secondValue = prompt("Digite o segundo valor:")
+        let opera = prompt(" Digite a operação desejada:\n1- subtração\n2- adição\n3- multiplicação\n4- divisão")
+
+        let resultado 
+        switch(opera){
+            case "1":
+                resultado = firstValue - secondValue
+                alert(`Resultado: ${resultado}\nOperação escolhida: subtração`)
+                break
+            case "2":
+            resultado = Number(firstValue + secondValue)
+                alert(`Resultado: ${resultado}\nOperação escolhida: adição`)
+                break
+            case "3":
+            resultado = firstValue * secondValue
+                alert(`Resultado: ${resultado}\nOperação escolhida: multiplicação`)
+                break    
+            case "4":
+            resultado = firstValue / secondValue
+                alert(`Resultado: ${resultado}\nOperação escolhida: divisão`)    
+                break
+            default:
+                alert('Operação não encontrada.')         
+        }
+    </script>
+</body>
+</html>
