@@ -1,11 +1,9 @@
+let dobra = 0
 let naveName = prompt("Qual o nome da nave?")
-let dobra = prompt(`Deseja entrar em dobra espacial?\n1- Sim\n2- Não`)
+let Nextdobra = confirm(`Deseja entrar em dobra espacial?`)
 
-let Nextdobra
-while(dobra == "1"){
-    Nextdobra = prompt("Você deseja realizar a próxima dobra?\n1- Sim\n2- Não")
-    if(Nextdobra == "1"){
-        dobra += 1
-    }
+while(Nextdobra == true){
+     dobra += 1
+     Nextdobra = confirm("Você deseja realizar a próxima dobra?")
 }
-alert("Número de dobras feitas:  " + dobra)
+document.write(`A nave ${naveName} realizou ${dobra} dobras`)
