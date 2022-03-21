@@ -6,4 +6,6 @@ while(Nextdobra == true){
      dobra += 1
      Nextdobra = confirm("Você deseja realizar a próxima dobra?")
 }
-document.write(`A nave ${naveName} realizou ${dobra} dobras`)
+document.write(`A nave ${naveName} realizou ${dobra} dobras`) 
+
+
