@@ -1,17 +1,14 @@
-let velocitySpaceship = 150
 
 function slowDown(velocity, printer){
-    console.log("Entrada na função")
-    let newVelocity
-    let seconds = 0
     while(velocity > 0){
-        console.log(velocity)
+        printer(velocity)
         velocity -= 20
-        seconds ++
-        console.log(`${seconds} segundos`)
     }
-    printer(velocity)
-    return velocity
+   alert("Nave parada. Comportas podem ser abertas.")
 }
+let spaceshipVelocity = 150
+let printVelocity = function(velocity){
+    console.log(`Velocidade atual: ${velocity}`)
+}
+slowDown(spaceshipVelocity, printVelocity)
 
-slowDown(150)
