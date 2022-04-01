@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1:#181818;
+    --color2: #202020;
+    --color3: #121212 ;
+    --color4: #313131;
+    --color5:#bbb;
+}
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: minmax(3/auto);
+    align-items: center;
+}
+header{
+    grid-column: 1/3;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-item{
+    display: flex;
+    align-items: center;
+}
+.container-item > input{
+    height: 52px;
+    width: 320px;
+    padding-left: 10px;
+    border: none;
+    background-color: var(--color3);
+    color: #bbb;
+    outline: none;
+}
+.container-item > button{
+    height: 52px;
+    width: 70px;
+    background-color: var(--color4);
+    border: none;
+}
+#lupa-img{
+    height: 30px;
+}
+
+div > img{
+    height: 50px;
+}
+.circulo{
+    background-color: var(--color5);
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+/* MAIN */
+.main-video{
+    width: 70%;
+    height: 400px;
+    background-color: #bbb;
+    grid-column: 1/1 ;
+}
+aside{
+    grid-column: 2/2;
+}
+.container-second-item{
+    background-color: #bbb;
+    height: 150px;
+    width: 70%;
+}
