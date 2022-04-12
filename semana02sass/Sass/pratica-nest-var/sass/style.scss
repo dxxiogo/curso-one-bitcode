@@ -1,0 +1,10 @@
+$color-item: blue;
+$color-container: purple;
+
+.container{
+    background-color: $color-container;
+    li{
+        color: white;
+        background-color: $color-item;
+    }
+}
