@@ -1,0 +1,19 @@
+.texts h1 {
+  font-family: arial;
+  font-size: 30px;
+  color: red;
+}
+.texts p {
+  font-family: arial;
+  font-size: 30px;
+  color: blue;
+}
+
+.container div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid purple;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@mixin text-style($color, $font-size, $font-family) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
+@mixin details-itens {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid purple;
+}
+.texts{
+    h1{
+        @include text-style(red, 30px, arial)
+    }
+    p{
+        @include text-style(blue, 30px, arial)
+    }
+}
+.container{
+    div{
+        @include details-itens()
+    }
+}
