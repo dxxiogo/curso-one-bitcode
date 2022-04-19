@@ -1,11 +1,24 @@
-let dobra
-let spaceshipName = prompt("Qual o nome da nave?")
-let choosen = confirm("Deseja entrar na dobra?")
-if(choosen == true){
-    dobra = 1
+let spaceship = prompt("Qual o nome da nave?")
+let choosenOption = prompt("Deseja entrar em dobra espacial?")
+let warpSpace = 0
+if(choosenOption == "sim"){
+    warpSpace ++
 }
-while(choosen == true){
-    choosen = confirm("Deseja realizar próxima dobra na dobra?")
-    dobra ++
+while(choosenOption == "sim"){
+    choosenOption = prompt("desejar realizar a próxima dobra?")
+    warpSpace ++
+    choosenOption = prompt("desejar realizar a próxima dobra?")
+} 
+alert(`${spaceship} realizou ${warpSpace} dobras`)
+
+let spaceShip = "Helmet"
+let newSpaceship = ""
+
+for(let i = 0; i < spaceShip.length; i ++ ){
+    if(spaceShip[i] == "e"){
+        newSpaceship += "i"
+    }else{
+        newSpaceship += spaceShip[i]
+    }
 }
-alert("Quantidade de dobras realizadas " + dobra)
+console.log(newSpaceship)
