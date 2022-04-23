@@ -1,0 +1,6 @@
+let numberFirst = prompt("Digite um número:")
+let numberSecond = prompt("Digite mais um número")
+let convertNumberFirst = parseInt(numberFirst)
+let convertNumberSecond = parseInt(numberSecond)
+let sum = (convertNumberFirst + convertNumberSecond)
+alert(`A soma entre ${numberFirst} e ${numberSecond} é ${sum}`)
