@@ -1,42 +1,45 @@
-let velocity = 0;
-let choseeOption = ""
-let spaceship = prompt("Qual o nome da nave?")
+let currentVelocity = 0;
+let velocity = parseInt(currentVelocity)
+let spaceshipName = prompt("Informe o nome da nave:");
 
+let chosenOption = prompt("Escolha uma das opções:\n1- Acelerar a nave\n2- Desacelerar a nave\n3- Imprimir dados de bordo\n4- Sair do programa");
 
-function speedUp(){
-    velocity += 5
-    return velocity
+function speedUp(velocityP){ 
+    velocity += 5;
 }
-
-function slowDown(){
-    if(velocity > 0){
-        velocity -= 5
-    }else{
-        velocity = 0
+function slowDown(velocityP){
+    if(velocity == 0){
+        velocity = 0;
+    } else{
+        velocity -= 5;
     }
-    return velocity
-}
-
-function printData(){
-    alert(`O nome da nave é ${spaceship}\nA velociade atual: ${velocity}km/s`)
-}
-
-function menu(){
-    choseeOption = prompt("Escolha as seguintes opções:\n1- Acelerar a nave em 5km/s\n2- Desacelerar a nave em 5km/s\n3- Imprimir dados de bordo\n4-Sair do programa");
-    switch(choseeOption){
+}    
+function printData(velocityP){
+    alert(`Name: ${spaceshipName}\nCurrent speed: ${velocity}`)
+}    
+ function menu(){
+     chosenOption = prompt("Escolha uma das opções:\n1- Acelerar a nave\n2- Desacelerar a nave\n3- Imprimir dados de bordo\n4- Sair do programa");
+    switch(chosenOption){
         case "1":
-            speedUp()
-        break
+            speedUp(velocity);
+            break
         case "2":
-            slowDown()
-        break    
+            slowDown(velocity);
+            break
         case "3":
-            printData()
-        break 
+            printData();
+            break
+        case "4":
+            alert("Programa encerrando...");
+            break
+        default:         
+            alert("Opção inválida!")           
     }
-    return choseeOption
+    return chosenOption;
 }
-menu()
-while(choseeOption != "4"){
-   menu()
+console.log(menu())
+
+while(menu() != 4){
+    menu()
 }
+
