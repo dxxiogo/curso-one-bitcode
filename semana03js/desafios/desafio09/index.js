@@ -13,4 +13,5 @@ let printando = newVelocity => {
 
 
 computarBordo(150, printando);
-console.log(printando)
+
+
