@@ -3,7 +3,7 @@ let spaceshipInformation = new Object();
 spaceshipInformation.name = prompt("Informe o nome da espaçonave: ");
 spaceshipInformation.type = prompt("Informe o tipo da espaçonave: ");
 spaceshipInformation["velocity"] = 0;
-spaceshipInformation["maxVelocity"] = prompt("Informe a velocidade máxima que a nave deve chegar: ");
+spaceshipInformation["maxVelocity"] = Number (prompt("Informe a velocidade máxima que a nave deve chegar: "));
 
 let checkVelocity = function(velocity){
     if(velocity >= spaceshipInformation.maxVelocity){
@@ -21,9 +21,8 @@ spaceshipInformation.speedUp = function(checkout){
                 alert(`Name: ${this.name}\nType: ${this.type}\nVelocity: ${this.velocity}`);
                 break;
             case "Acelerar":    
-                let acelleration = prompt("Informe o quanto deseja acelerar: ");
-                let convertAcelleration = parseInt(acelleration)
-                this.velocity += convertAcelleration;
+                let acelleration = Number(prompt("Informe o quanto deseja acelerar: "))
+                this.velocity += acelleration;
                 checkout(this.velocity)
                 break;
             default:    
